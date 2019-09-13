@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit4be14f2954d98e61cfc6abd0d0b4ac62
+class ComposerStaticInita250b1c2f81bd1a51dd9d674d31578e0
 {
     public static $files = array (
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
@@ -22,7 +22,6 @@ class ComposerStaticInit4be14f2954d98e61cfc6abd0d0b4ac62
         ),
         'P' => 
         array (
-            'Psr\\Log\\' => 8,
             'Psr\\Http\\Server\\' => 16,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
@@ -33,8 +32,11 @@ class ComposerStaticInit4be14f2954d98e61cfc6abd0d0b4ac62
         ),
         'F' => 
         array (
-            'Firebase\\JWT\\' => 13,
             'FastRoute\\' => 10,
+        ),
+        'A' => 
+        array (
+            'App\\' => 4,
         ),
     );
 
@@ -43,7 +45,6 @@ class ComposerStaticInit4be14f2954d98e61cfc6abd0d0b4ac62
         array (
             0 => __DIR__ . '/..' . '/tuupola/callable-handler/src',
             1 => __DIR__ . '/..' . '/tuupola/slim-basic-auth/src',
-            2 => __DIR__ . '/..' . '/tuupola/slim-jwt-auth/src',
         ),
         'Tuupola\\Http\\Factory\\' => 
         array (
@@ -52,10 +53,6 @@ class ComposerStaticInit4be14f2954d98e61cfc6abd0d0b4ac62
         'Slim\\' => 
         array (
             0 => __DIR__ . '/..' . '/slim/slim/Slim',
-        ),
-        'Psr\\Log\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
         'Psr\\Http\\Server\\' => 
         array (
@@ -75,13 +72,13 @@ class ComposerStaticInit4be14f2954d98e61cfc6abd0d0b4ac62
         array (
             0 => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container',
         ),
-        'Firebase\\JWT\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
-        ),
         'FastRoute\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/App',
         ),
     );
 
@@ -98,9 +95,9 @@ class ComposerStaticInit4be14f2954d98e61cfc6abd0d0b4ac62
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit4be14f2954d98e61cfc6abd0d0b4ac62::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit4be14f2954d98e61cfc6abd0d0b4ac62::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit4be14f2954d98e61cfc6abd0d0b4ac62::$prefixesPsr0;
+            $loader->prefixLengthsPsr4 = ComposerStaticInita250b1c2f81bd1a51dd9d674d31578e0::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInita250b1c2f81bd1a51dd9d674d31578e0::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInita250b1c2f81bd1a51dd9d674d31578e0::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

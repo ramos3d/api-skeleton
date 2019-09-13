@@ -1,6 +1,5 @@
 <?php
-
-class Db
+class Database
 {
     private $host     = "localhost";
     private $db_name  = "slim";
@@ -15,7 +14,6 @@ class Db
             $this->username, $this->password);
             // set the PDO error mode to exception
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            //echo "Connected successfully \n";
             }
         catch(PDOException $e)
             {
