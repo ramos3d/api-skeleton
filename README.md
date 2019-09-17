@@ -9,18 +9,22 @@ $ composer update
 # Directory Structure
 
 ``` bash
-|-- App
+|-- Application
 	|-- app
-		|-- Auth
 		|-- Controllers
-		|-- Middleware
+			|-- UserController
 		|-- Models
-		|-- Validation
-		|-- Routes.php
-	|-- bootstrap
-		|-- app.php
+			|-- UserModel
 	|-- public
-	|-- resources
-
-  
+		|-- .htaccess
+		|-- index.php
+	|-- src
+		|-- dependencies.php
+		|-- middleware.php
+		|-- routes.php
+		|-- settings.php
+	|-- templates
+		|-- index.phtml
+	|-- vendor
+	  
   ```
