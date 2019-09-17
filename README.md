@@ -1,10 +1,8 @@
-# API Structure
+# API Framework
 ``` terminal 
 $ composer update
 ```
-## Basic Auth
-
-## JWT - Jason Web Token
+## Json Web Token - JWT
 
 # Directory Structure
 
