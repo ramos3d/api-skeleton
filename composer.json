@@ -1,6 +1,6 @@
 {
     "name": "slim/slim-skeleton",
-    "description": "An API Framework for rapid development",
+    "description": "An API Framework for a faster development",
     "keywords": ["slim", "api", "skeleton", "router", "psr7"],
     "homepage": "https://github.com/ramos3d/api-skeleton",
     "license": "",
