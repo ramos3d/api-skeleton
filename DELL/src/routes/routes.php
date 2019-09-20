@@ -1,11 +1,11 @@
 <?php
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
-use Tuupola\Middleware\HttpBasicAuthentication;
+// use Tuupola\Middleware\HttpBasicAuthentication;
 use App\Controllers\HomeController;
 use App\Controllers\AuthController;
 
-require 'src/config/Database.php';
+
 
 
 $app = new \Slim\App;
@@ -20,14 +20,14 @@ $app->add(function ($req, $res, $next) {
     ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
 });
 
-$app->get('/', function (Request $request, Response $response) {
-    $response->getBody()->write("Hello home");
-    return $response;
-    //or
-    //return $this->view->render($response, 'home.html');
-});
+// $app->get('/', function (Request $request, Response $response) {
+//     $response->getBody()->write("Hello home");
+//     return $response;
+//     //or
+//     //return $this->view->render($response, 'home.html');
+// });
 
-$app->post('/', HomeController::class . ':index');
+$app->get('/', HomeController::class . ':index');
 
 // This route requires JWT Authentication
 $app->post('/auth', AuthController::class . ':login');
@@ -69,8 +69,3 @@ $app->get('/all', function (Request $request, Response $response) {
         echo '{"error": {"text": '.$e->getMessage().'}';
     }
 });
-
-
-
-
-/* testes */
