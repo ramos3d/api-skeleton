@@ -1,9 +1,9 @@
 # API Skeleton Framework
-``` terminal
-$ composer update
-```
+This is a very simple API structure that uses Json Web Token (JWT) authentication.
 
 # Configuration
+Add your own database credentials into settings.php file localated at src/
+
 ``` php
 // database connection details
 "db" => [
@@ -13,7 +13,6 @@ $ composer update
     "pass" => "YourPassword"
 ],
 ```
-## Json Web Token - JWT
 
 # Directory Structure
 
