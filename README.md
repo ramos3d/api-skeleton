@@ -14,8 +14,9 @@ Add your own database credentials into settings.php file localated in ```src/ ``
 ],
 ```
 # Endpoints
-You can easily create new endpoints in the ``` /src/routes.php ``` . 
-ready-to-use endpoints:
+You can easily create new endpoints in the ``` /src/routes.php ``` .
+
+Find below the ready-to-use endpoints:
 * /    - ``` home ``` 
 * /api - ``` That is a protected area ``` 
 
