@@ -2,7 +2,7 @@
 This is a very simple API structure that uses Json Web Token (JWT) authentication.
 
 # Configuration
-Add your own database credentials into settings.php file localated at src/
+Add your own database credentials into settings.php file localated in ```src/ ```
 
 ``` php
 // database connection details
@@ -13,6 +13,12 @@ Add your own database credentials into settings.php file localated at src/
     "pass" => "YourPassword"
 ],
 ```
+# Endpoints
+You can easily create new endpoints in the ``` /src/routes.php ``` .
+
+Find below the ready-to-use endpoints:
+* /    - ``` home ```
+* /api - ``` That is a protected area ```
 
 # Directory Structure
 
