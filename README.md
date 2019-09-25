@@ -19,6 +19,7 @@ You can easily create new endpoints in the ``` /src/routes.php ``` .
 Find below the ready-to-use endpoints:
 * /    - ``` home ```
 * /api - ``` That is a protected area ```
+* /login - ``` Method Allowed: post ['email', 'password'] ``` 
 
 # Directory Structure
 
